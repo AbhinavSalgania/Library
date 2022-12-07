@@ -16,14 +16,17 @@
 
     <ul id="bookList"></ul>
 
-    <!--To add new book-->
 
-    <form action="/add-book" method="POST">
-        <input type="text" name="title" placeholder="Book Title">
-        <button type="submit">Add Book</button>
+    <!--Form to add books to the library-->
 
-    </form>
-
+    <form id="bookForm">
+        <label for="title">Title</label>
+        <input type="text" id="title" name="title" required>
+        <label for="author">Author</label>
+        <input type="text" id="author" name="author" required>
+        <label for="read">Read</label>
+        <input type="checkbox" id="read" name="read">
+        <button type = "submit" id = "addBook">Add Book</button>
 </body>
 
 

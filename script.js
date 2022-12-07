@@ -12,7 +12,7 @@ function Book (title, author, read){
     this.read = read;
 }
 
-// add book to library
+// add book to library array
 function addBookToLibrary(title, author, read){
     let book = new Book(title, author, read);
     myLibrary.push(book);
@@ -29,33 +29,20 @@ function displayBooks(){
     }
 }
 
-// add 3 random books to library manually for testing
+// function to add book to library array and display it
+function addBook(){
+    let title = document.getElementById("title").value;
+    let author = document.getElementById("author").value;
+    let read = document.getElementById("read").value;
+    addBookToLibrary(title, author, read);
+    displayBooks();
 
-addBookToLibrary("Alice in Wonderland", "Lewis Carroll", "read");
-addBookToLibrary("The Hobbit", "J.R.R. Tolkien", "not read");
-addBookToLibrary("Game of Thrones", "George R.R. Martin", "read");
-
-// display books on page
-displayBooks();
-
-
-
-
-
-
-// New Book button that brings up a form to add a new book
-
-function newBook(){
 }
 
-// button on each book's display to change its read status
-
-function changeReadStatus(){
-}
-
-// button on each book's display to remove the book from the library
-
-function removeBook(){
-}
-
+// add event listener to add book button
+let submit = document.getElementById("addBook");
+submit.addEventListener("click", function(event){
+    event.preventDefault();
+    addBook();
+});
 

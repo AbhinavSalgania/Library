@@ -1,0 +1,61 @@
+body{
+    background-color: #000;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+/* double solid line at the bottom */
+h1{
+    font-size: 2em;
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 0 0 20px;
+    border-bottom: 1px solid #fff;
+    
+}
+
+h2{
+    font-size: 1.5em;
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 0 0 20px;
+    border-bottom: 1px solid #fff;
+}
+
+/* Give list items a color */
+
+#bookList li{
+    list-style-type: disc;
+    margin: 0 0 20px;
+    padding: 0 0 0 20px;
+    color: rgb(255, 255, 255);
+}
+
+#bookList li:last-child{
+    margin: 0;
+}
+
+/* Separate last book from the form
+    And give a yellow background */
+
+#bookForm{
+    margin: 20px 0 0;
+    padding: 20px;
+    background-color: rgb(255, 255, 111);
+    color: #000;
+
+}
+
+
+
+
+
+
+
+
+
+
