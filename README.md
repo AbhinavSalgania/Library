@@ -1,4 +1,4 @@
-# Library_Odin
+# Library
 
 Simple Library app to learn about objects and constructors in JavaScript.
 
